@@ -1,6 +1,8 @@
 from gerar_dados import criar_dataset_simulado, salvar_dados_brutos
 from limpar_dados import limpar_dados, salvar_dados_limpos
 from analisar_dados import gerar_relatorio
+from visualizar_dados import criar_graficos, analisar_padroes_vendas
+
 
 def main():
     print("Gerando dataset simulado...")
@@ -13,6 +15,10 @@ def main():
 
     print("\nAnalisando dados...")
     gerar_relatorio(df_limpo)
+    print("\nCriando visualizações...")
+    criar_graficos(df_limpo)
+    print("\nAnalisando padrões de vendas...")
+    analisar_padroes_vendas(df_limpo)
 
 if __name__ == "__main__":
     main()
