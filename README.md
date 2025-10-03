@@ -17,10 +17,20 @@ Projeto de análise exploratória de dados simulados de vendas, incluindo limpez
 └── README.md               # Este arquivo
 ```
 
+## Requisitos
+
+- Python 3.7 ou superior
+- Bibliotecas Python (instalar via pip)
+
 ## Dependências
 
 ```bash
 pip install pandas matplotlib seaborn numpy
+```
+
+Ou instalar todas as dependências de uma vez:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Como Executar
@@ -31,6 +41,28 @@ python main.py
 ```
 
 ### Executar Módulos Individuais
+
+#### Gerar dados simulados
+```bash
+python gerar_dados.py
+```
+
+#### Limpar dados
+```bash
+python limpar_dados.py
+```
+
+#### Analisar dados
+```bash
+python analisar_dados.py
+```
+
+#### Criar visualizações
+```bash
+python visualizar_dados.py
+```
+
+#### Usar como módulos Python
 ```python
 # Gerar apenas os dados
 from gerar_dados import criar_dataset_simulado
@@ -55,6 +87,21 @@ analisar_padroes_vendas(df_limpo)
 - **SQL**: Consultas para análise de dados
 - **Insights**: Relatório com recomendações de negócio
 
-## Autor
+## Arquivos Gerados
+
+Após a execução, os seguintes arquivos serão criados:
+- `dados_vendas.csv`: Dataset bruto com dados simulados
+- `data_clean.csv`: Dataset limpo após tratamento
+
+## Estrutura dos Dados
+
+O dataset contém as seguintes colunas:
+- **Id**: Identificador único da venda
+- **Data**: Data da venda (2023)
+- **Produto**: Nome do produto vendido
+- **Quantidade**: Quantidade vendida (1-9)
+- **Preco**: Preço unitário (R$ 5,00 - R$ 70,00)
+- **Categoria**: Categoria do produto (Alimentos/Bebidas)
+
 
 Projeto desenvolvido para Teste para Estagiário de Analytics Quod

@@ -68,7 +68,6 @@ def criar_dataset_simulado(n=50):
 
 def salvar_dados_brutos(df, nome_arquivo="dados_vendas.csv"):
 
-    
     # Salvar DataFrame em arquivo CSV sem incluir índice automático do pandas
     df.to_csv(nome_arquivo, index=False)
 

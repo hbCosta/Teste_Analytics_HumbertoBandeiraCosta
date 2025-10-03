@@ -1,24 +1,22 @@
 # Relatório de Insights - Análise de Vendas 2023
 
-# Resumo 
+## Resumo Executivo
 
-Com base nas análises de dados e consultas SQL realizadas no dataset simulado de vendas, foram identificados padrões importantes que podem orientar decisões do negócio.
+A partir da análise do conjunto de dados simulado de vendas de supermercado, foram identificados pontos que podem apoiar decisões de negócio. O relatório aborda a distribuição de categorias, variação de preços e tratamento dos dados utilizados.
 
-# Principais Insights Encontrados
+## Principais Resultados
 
-# 1. Dominância da Categoria Alimentos
-A análise revelou que **85% dos produtos** pertencem à categoria "Alimentos", enquanto apenas 15% são "Bebidas". Isso indica uma forte concentração no segmento alimentício, sugerindo oportunidades de diversificação.
+### 1. Predomínio da categoria Alimentos
 
-# 2. Variação Significativa de Preços
-Observou-se uma **amplitude de preços entre R$ 5,00 e R$ 70,00**, indicando diferentes segmentos de produtos. Os ovos apresentaram o maior preço unitário (R$ 70,00), enquanto azeite teve o menor (R$ 5,00).
+Foi identificado que **85% dos produtos** pertencem à categoria "Alimentos" (11 produtos), enquanto "Bebidas" representa **15%** (2 produtos). Esse cenário mostra maior presença de itens alimentícios e abre espaço para ampliar a oferta de bebidas.
 
-### 3. Padrões Sazonais de Vendas
-A análise temporal mostrou **variações mensais nas vendas**, com alguns meses apresentando volumes superiores. Isso sugere influência de fatores sazonais que podem ser explorados para planejamento de estoque.
+### 2. Faixa de preços
 
-### 4. Concentração de Faturamento
-A análise dos dados revelou diferenças significativas no faturamento entre produtos, com alguns itens gerando valores consideravelmente maiores devido à combinação de preço e quantidade vendida. Produtos como ovos (preço alto) e café (volume elevado) se destacam no faturamento total.
+Os preços variam entre **R$ 5,00 e R$ 70,00**. Essa variação mostra que os produtos atendem desde itens de menor valor até de maior preço, cobrindo diferentes perfis de consumo.
 
+### 3. Tratamento dos dados
 
-OBSERVAÇÃO -->  Todos esses resultados são baseados em simulações e valores aleatorios.
+Durante a preparação do conjunto de dados foram inseridos valores nulos em nomes de produtos e preços, além de registros duplicados, com o objetivo de testar o processo de limpeza. Os valores ausentes foram tratados por meio da substituição por "Desconhecido" (para nomes) e pela média dos preços (para valores numéricos). Já as duplicatas foram identificadas e removidas. Esse procedimento garante que o processo de análise esteja preparado para lidar com situações semelhantes em bases reais.
 
+**Nota**: O relatório foi produzido a partir de dados simulados, utilizados apenas para demonstração.
 
